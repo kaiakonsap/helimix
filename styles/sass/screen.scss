@@ -1,0 +1,274 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+html {
+  font-family: calibri;
+  font-size: 15px;
+}
+
+p, h3, h1 {
+  color: #4e4e4e;
+}
+
+h3, h1 {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+  padding-bottom: 38px;
+  padding-top: 35px;
+
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+header a:link
+{
+  padding: 5px 48px;
+}
+/* visited link */
+a:visited {
+  color: #d3d3d3;
+}
+
+/* mouse over link selected link */
+
+a:hover, a:active, .active  {
+  color: #282828;
+}
+.active  {
+  color: #282828 !important;
+}
+header a:hover, header a:active, header .active
+{
+  background-color: white;
+
+}
+
+
+.border_top
+{
+  border-top: 1px solid lightgray;
+
+}
+.price
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#main_menu {
+  background-color: #282828;
+  padding-bottom: 5px;
+  padding-top: 5px;
+li{
+  border-left: 1px solid #d3d3d3;
+}
+li:first-child
+{
+  border-left: none;
+}
+}
+
+ul {
+  display: inline-block
+}
+
+li {
+  display: inline-block;
+  color: white;
+
+}
+
+#like {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.container1 {
+  width: 90%;
+  margin: 0px auto;
+  position: relative;
+}
+.container2 {
+  width: 80%;
+  margin: 0px auto;
+  position: relative;
+}
+
+#cover {
+  background-image: url("../img/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 185px;
+  min-height: 214px;
+  position: relative;
+  z-index: -1;
+  img {
+    position: absolute;
+    left: 5%;
+    top: 39px;
+  }
+}
+
+#main {
+  background-color: rgba(255, 255, 255, 0.5);
+  min-height: 100px;
+  margin-top: -79px;
+  border-top:1px solid lightgray ;
+  z-index: 0;
+  #images {
+    display: inline-block;
+    margin-top: 74px;
+    width: 84%;
+    img {
+      width: 32%;
+      height: auto;
+      margin: 2px;
+      min-width: 250px;
+    }
+  }
+  #news {
+    margin-top: 74px;
+    display: inline-block;
+    float: right;
+    width: 14%;
+    /*    h1{
+          padding-bottom: 38px;
+          padding-top: 35px;
+
+        }*/
+    p span {
+      font-weight: bold;
+    }
+  }
+  #products {
+
+    margin-top: 34px;
+    padding: 0 10px;
+    .item
+                    {
+                      position: relative;
+                    }
+    .image_wrap, .intro {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .image_wrap img {
+      width: 146px;
+      height: auto;
+    }
+    .intro {
+      max-width: 50%;
+      margin-left: 20px;
+      display: inline-block;
+      vertical-align: middle;
+
+    }
+
+  h1{
+    padding: 20px 0 38px 5%;
+
+  }
+  }
+  .store
+  {
+    border: 1px solid #d3d3d3;
+    margin-top: 85px !important;
+    padding: 0 !important;
+    width: 74%;
+    min-width: 300px;
+    .item
+    {
+      margin: 20px 40px 20px 20px;
+    }
+  }
+  .headline
+  {
+    background-color: #4e4e4e;
+    padding: 5px 0 5px 53px;
+    margin-bottom: 45px;
+    p
+    {
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+  .sidebar{
+    background-color: #4e4e4e;
+    display: inline-block;
+    position: fixed;
+    right: 10%;
+    top: 256px;
+    width: 200px;
+    text-align: center;
+    ul
+    {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      font-weight: bold;
+      li{
+        display: block;
+        padding: 0 5px;
+        text-transform: uppercase;
+        a
+        {
+          padding: 10px;
+        }
+        .active, a:hover{
+          text-decoration: underline;
+          color: white !important;
+        }
+        ul
+        {
+          padding: 0 !important;
+          li
+          {
+            padding: 0 0 0 15px;
+          }
+          li a,  li .active{
+            text-transform: capitalize;
+            padding: 5px;
+          }
+          li .active{
+            text-decoration: underline;
+            color: white !important;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+#footer {
+  background-color: #282828;
+  margin-top: 40px;
+  .container1 {
+    text-align: center;
+    ul li{
+      padding: 14px 48px;
+
+    }
+  }
+}
