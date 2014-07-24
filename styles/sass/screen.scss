@@ -109,11 +109,7 @@ li {
   margin: 0px auto;
   position: relative;
 }
-.container2 {
-  width: 80%;
-  margin: 0px auto;
-  position: relative;
-}
+
 
 #cover {
   background-image: url("../img/cover.jpg");
@@ -128,13 +124,25 @@ li {
     top: 39px;
   }
 }
-
+header
+{
+  .container2 {
+    width: 74%;
+    margin: 0px auto;
+    position: relative;
+  }
+}
 #main {
   background-color: rgba(255, 255, 255, 0.5);
   min-height: 100px;
   margin-top: -79px;
   border-top:1px solid lightgray ;
   z-index: 0;
+  .container2 {
+    width: 51%;
+    margin: 0px auto;
+    position: relative;
+  }
   #images {
     display: inline-block;
     margin-top: 74px;
@@ -160,9 +168,7 @@ li {
       font-weight: bold;
     }
   }
-  #content_strip {
-
-    margin-top: 34px;
+  #content_strip,#footer_strip {
     padding: 0 10px;
     .item
           {
@@ -201,13 +207,26 @@ li {
 
   }
   }
-  .center_container
+  #footer_strip
+  {
+    margin-top: 34px;
+    .team
+    {
+      display: inline-block;
+      text-align: center;
+      padding: 0 0 0 15px;
+    }
+    .team:first-child
+    {
+      padding: 0 !important;
+    }
+  }
+
+  #content_strip
   {
     border: 1px solid #d3d3d3;
     margin-top: 85px !important;
     padding: 0 !important;
-    width: 74%;
-    min-width: 300px;
     .item
     {
       margin: 20px 40px 20px 20px;
@@ -215,8 +234,11 @@ li {
   }
   .small
   {
-    width: 64%;
     margin-left: 10%;
+  }
+  .small_center
+  {
+    margin: 0 auto;
   }
   .headline
   {
@@ -228,6 +250,16 @@ li {
       text-transform: uppercase;
       color: white;
     }
+  }
+  .googlemap
+  {
+    margin-bottom: 0;
+
+  }
+  .map
+  {
+    //Võta see välja kui wordpressi paned
+    img{width: 100%}
   }
   .sidebar{
     background-color: #4e4e4e;
@@ -291,5 +323,113 @@ li {
       padding: 14px 48px;
 
     }
+  }
+}
+@media screen and (max-width: 1345px)
+{
+  #main .container2
+  {
+    width: 682px !important;
+  }
+}
+@media screen and (max-width: 1053px)
+{
+  #main .container2
+  {
+    width: 682px !important;
+  }
+
+  #footer .container1 ul li {
+  padding: 10px 23px;
+  width: 40%;
+  text-align: left;
+  }
+}
+@media screen and (max-width: 950px)
+{
+  #main_menu
+  {
+    padding: 5px 15px;
+  }
+ header .container2
+  {
+    width: 100%;
+  }
+
+
+}
+@media screen and (max-width: 830px)
+{
+  header
+  {
+  ul {
+    display: block;
+  }
+  #main_menu li {
+    border-left: none;
+  }
+  li {
+    display: block;
+  }
+  a:link {
+    padding: 11px 0;
+    text-align: center;
+  }
+   a:hover, a:active, .active {
+    border-bottom: 1px solid #282828;
+  }
+}
+}
+@media screen and (max-width: 712px)
+{
+ #main .container2
+ {
+   width: 100%!important;
+
+ }
+  #main #footer_strip{
+    .team
+    {
+      display: block;
+      text-align: center;
+    }
+    .text
+    {
+      text-align: left;
+      display: inline-block;
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 550px)
+{
+#footer .container1 ul li {
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+}
+@media screen and (max-width: 430px)
+{
+  #main #footer_strip .text {
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    h3 {
+      padding-bottom: 12px;
+    }
+  }
+  #main #footer_strip h1 {
+    padding: 20px 0 10px 5%;
+  }
+  #cover
+  {
+    display: none;
+  }
+  #main
+  {
+    margin-top: 0;
+    #content_strip {
+      margin-top: 26px !important;}
   }
 }
