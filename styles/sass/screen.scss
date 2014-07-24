@@ -138,10 +138,19 @@ header
   margin-top: -79px;
   border-top:1px solid lightgray ;
   z-index: 0;
-  .container2 {
-    width: 51%;
+  .container2, .container3 {
     margin: 0px auto;
     position: relative;
+  }
+  .container2 {
+    width: 51%;
+  }
+  .container3 {
+    width: 74%;
+    #content_strip
+    {
+      width: 74%;
+    }
   }
   #images {
     display: inline-block;
@@ -232,10 +241,7 @@ header
       margin: 20px 40px 20px 20px;
     }
   }
-  .small
-  {
-    margin-left: 10%;
-  }
+
   .small_center
   {
     margin: 0 auto;
@@ -266,7 +272,7 @@ header
     display: inline-block;
     position: fixed;
     right: 10%;
-    top: 256px;
+    top: 257px;
     width: 220px;
     text-align: center;
     ul
@@ -332,8 +338,29 @@ header
     width: 682px !important;
   }
 }
+@media screen and (max-width: 1145px)
+{
+  #main .sidebar {
+    right: 5%;
+  }
+  #main .container3 {
+    width: 90%;
+    #content_strip {
+      width: 70%;
+    }
+  }
+}
 @media screen and (max-width: 1053px)
 {
+  #main_menu
+  {
+    padding: 5px 15px;
+  }
+  header .container2
+  {
+    width: 100%;
+  }
+
   #main .container2
   {
     width: 682px !important;
@@ -345,17 +372,19 @@ header
   text-align: left;
   }
 }
-@media screen and (max-width: 950px)
+@media screen and (max-width: 935px)
 {
-  #main_menu
-  {
-    padding: 5px 15px;
-  }
- header .container2
-  {
-    width: 100%;
-  }
 
+  #main .sidebar {
+    right: 15px;
+  }
+  #main .container3 {
+    width: 100%;
+    #content_strip {
+      width: 65%;
+      margin-left: 15px;
+    }
+  }
 
 }
 @media screen and (max-width: 830px)
@@ -379,6 +408,15 @@ header
     border-bottom: 1px solid #282828;
   }
 }
+  #main .sidebar {
+    display: none;
+  }
+  #main .container3 #content_strip {
+    width: 100%;
+    margin-left: 0;
+    border-left: 0;
+    border-right: 0;
+  }
 }
 @media screen and (max-width: 712px)
 {
@@ -392,6 +430,7 @@ header
     {
       display: block;
       text-align: center;
+      margin-bottom: 6px;
     }
     .text
     {
@@ -419,6 +458,7 @@ header
       padding-bottom: 12px;
     }
   }
+
   #main #footer_strip h1 {
     padding: 20px 0 10px 5%;
   }
@@ -430,6 +470,25 @@ header
   {
     margin-top: 0;
     #content_strip {
-      margin-top: 26px !important;}
+      margin-top: 26px !important;
+      .item {
+        margin: 0 15px 29px;
+        .intro
+        {
+          display: block;
+          max-width: 100%;
+          margin-top: 12px;
+        }
+        .title
+        {
+          display: inline-block;
+        }
+      }
+
+    }
+    .price {
+      position: absolute;
+      bottom: -20px;
   }
+}
 }
