@@ -15,11 +15,11 @@ html {
   font-size: 15px;
 }
 
-p, h3, h1 {
+p, h3,.h3, h1 {
   color: #4e4e4e;
 }
 
-h3, h1 {
+h3, .h3,h1 {
   font-weight: bold;
   padding-bottom: 20px;
 }
@@ -550,7 +550,7 @@ header
     text-align: center;
     width: 100%;
     padding-top: 15px;
-    h3 {
+    .h3 {
       padding-bottom: 12px;
     }
   }
