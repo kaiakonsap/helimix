@@ -23,6 +23,13 @@ $(document).ready(function() {
                 itemsMobile : [700,1]
             });
 }
+    if ($("#owl-2").length > 0){
+        $("#owl-2").owlCarousel(
+            {
+                autoPlay: false, //Set AutoPlay to 3 seconds
+                singleItem:true
+            });
+}
 /*$(".link").click(function(e)
 {
 

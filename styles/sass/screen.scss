@@ -216,6 +216,15 @@ header
       margin: 2px;
     }
   }
+  #slaides
+  {
+    margin-top: 74px;
+
+    .item
+    {
+      text-align: center;
+    }
+  }
   #news {
     margin-top: 74px;
     display: inline-block;
@@ -262,7 +271,7 @@ header
     }
     .title
     {
-      h3{padding-bottom: 0}
+      .h3{padding-bottom: 0}
       vertical-align: baseline;
       margin-left: 30px;
     }
@@ -383,6 +392,7 @@ header
 #footer {
   background-color: #282828;
   margin-top: 40px;
+
   .container1 {
     text-align: center;
     ul li{
