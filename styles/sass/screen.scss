@@ -7,11 +7,12 @@
 
 * {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
-
+@font-face { font-family: 'calibri'; src: url('../fonts/Calibri.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri.woff') format('woff'), url('../fonts/Calibri.ttf') format('truetype'), url('../fonts/Calibri.svg#Calibri') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'calibri-Bold'; src: url('../fonts/Calibri-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-Bold.woff') format('woff'), url('../fonts/Calibri-Bold.ttf') format('truetype'), url('../fonts/Calibri-Bold.svg#Calibri-Bold') format('svg'); font-weight: normal; font-style: normal; }
 html {
-  font-family: calibri;
+  font-family: 'calibri',calibri;
   font-size: 15px;
 }
 
@@ -20,7 +21,7 @@ p, h3,.h3, h1,.intro {
 }
 
 h3, .h3,h1 {
-  font-weight: bold;
+  font-family: 'calibri-Bold';
   padding-bottom: 20px;
 }
 .h3
@@ -32,34 +33,56 @@ h1 {
   padding-top: 35px;
 
 }
+//uus osa
 
-a:link {
+ul li a
+{
   text-decoration: none;
+}
+.link
+{
+  color: white !important;
+}
+br { clear:left }
+
+#main_menu {
+
+  width: 100%;
+  background-color:  #282828;
+  padding: 5px 0;
+position: relative;
+}
+#main_menu .links {
+
+  margin: 0; padding: 0;
+  float: left;
+
+}
+#main_menu .links li {
+  display: inline;
+}
+#main_menu ul li a {
   color: white;
-  display: block;
-}
-header a:link
-{
   padding: 5px 48px;
+  background-color:  #282828;
+  border-left: 1px solid #d3d3d3;
+  text-align: center;
 }
-/* visited link */
-a:visited {
-  color: #d3d3d3;
+#main_menu .links li a {
+  float: left;
 }
-
-/* mouse over link selected link */
-
-a:hover, a:active, .active  {
-  color: #282828;
-}
-.active  {
-  color: #282828 !important;
-}
-header a:hover, header a:active, header .active
+#main_menu .links li:first-child a
 {
-  background-color: white;
-
+  border-left: none;
 }
+#main_menu ul li a:visited {
+  color: white;
+}
+#main_menu ul li a:hover, #main_menu ul li .active {
+  color: #282828 !important;
+  background-color: white;
+}
+//uus osa lõpp
 
 .border_top
 {
@@ -73,27 +96,16 @@ header a:hover, header a:active, header .active
   right: 0;
   text-align: right;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: 'calibri-Bold';
 }
-#main_menu {
-  background-color: #282828;
-  padding-bottom: 5px;
-  padding-top: 5px;
-li{
-  border-left: 1px solid #d3d3d3;
-}
-li:first-child
-{
-  border-left: none;
-}
-}
+
 
 ul {
   display: inline-block
 }
 
 li {
-  display: inline-block;
+  display:inline-block;
   color: white;
 
 }
@@ -136,6 +148,7 @@ header
     width: 74%;
     margin: 0px auto;
     position: relative;
+    overflow: hidden;
   }
   .sr-only {
     position: absolute;
@@ -154,7 +167,6 @@ header
     padding: 9px 10px;
     background-color: white;
     background-image: none;
-    border-bottom: 1px solid #282828;
     border-radius: 2px;
     vertical-align: middle;
   }
@@ -215,7 +227,7 @@ header
 
         }*/
     p span {
-      font-weight: bold;
+      font-family: 'calibri-Bold';
     }
   }
   #content_strip,#footer_strip {
@@ -223,6 +235,9 @@ header
     .item
           {
              position: relative;
+          a{text-decoration: none;
+
+          }
       .image_link
       {
         display: inline-block;
@@ -322,14 +337,18 @@ header
       margin: 0 auto;
       padding: 20px;
       text-align: left;
-      font-weight: bold;
+      font-family: 'calibri-Bold';
       li{
         display: block;
-        padding: 0 5px;
-        text-transform: uppercase;
+        padding: 4px 5px;
         a
         {
           padding: 10px;
+          color: white !important;
+          padding: 5px;
+          text-transform: uppercase;
+          display: block;
+          text-decoration: none;
         }
         .active, a:hover{
           text-decoration: underline;
@@ -412,11 +431,14 @@ header
   }
   #main_menu
   {
-    padding: 5px 15px;
+    #like
+    {
+      right: 48px;
+    }
   }
   header .container2
   {
-    width: 100%;
+    width: 94%;
   }
 
 
@@ -457,8 +479,12 @@ header
     width: 100%;
   }
     .links{display: none}
-  #main_menu li {
+  #main_menu {
+   padding: 5px 0;
+  }
+    #main_menu li a{
     border-left: none;
+    display: block;
   }
   li {
     display: block;
@@ -474,8 +500,8 @@ header
       display: block;
       position: absolute;
       left: 72px;
-      top: 0;
-    img{
+      top: 15px;
+      img{
       width: 30px;
       height: auto;
     }
