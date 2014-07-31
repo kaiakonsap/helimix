@@ -72,6 +72,7 @@ header #main_menu {
  #main_menu {
 position: fixed;
    z-index: 10;
+   top: 0;
 }
 
 #main_menu .links {
@@ -371,7 +372,7 @@ li {
     display: inline-block;
     position: fixed;
     right: 10%;
-    top: 257px;
+    top: 213px;
     width: 220px;
     text-align: center;
     ul
@@ -530,19 +531,20 @@ li {
   #main_menu {
    padding: 5px 0;
     .links{display: none}
+    li {
+      display: block;
+    }
   }
     #main_menu li a{
     border-left: none !important;
     display: block;
   }
-  li {
-    display: block;
-  }
+
   a:link {
     padding: 11px 0;
     text-align: center;
   }
-   a:hover, a:active, .active {
+  .accordion a:hover, .accordion a:active, .accordion .active {
     border-bottom: 1px solid #282828;
   }
     #like {
@@ -670,11 +672,12 @@ li {
       bottom: -20px;
   }
 }
-  .more_down
+  #main_small .more_down
   {
-    #content_strip {
-      margin-top: 85px !important;
+    top: 79px !important;
   }
+  .small_store {
+    margin-top: 95px !important;
   }
 }
 @media screen and (max-width: 370px)

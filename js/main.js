@@ -88,7 +88,7 @@ $(document).ready(function() {
             }
             else
             {
-                $('.sidebar').css('top',256 - bodyelem.scrollTop());
+                $('.sidebar').css('top',213 - bodyelem.scrollTop());
             }
 
 });
