@@ -7,23 +7,37 @@
 	margin-top: 10px;
 	text-align: center;
 }
-
+.owl-theme .owl-controls .owl-prev{
+    left:-10px;
+    background-image: url("./img/arrow1_left.png");
+}
+.owl-theme .owl-controls .owl-next{
+    right:-10px;
+    background-image: url("./img/arrow1_right.png");
+}
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{
-	color: #FFF;
-	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
-	margin: 5px;
-	padding: 3px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	background: #869791;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    color: #FFF;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;/*IE7 life-saver */
+    margin: 5px;
+    padding: 25px 16px;
+    width: 12px;
+    height: 30px;
+
+    font-size: 12px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: #4e4e4e;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1.0;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */

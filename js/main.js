@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     jQuery('.navbar-toggle').click(function (event) {
         event.preventDefault();
         if($( window ).width()<=830){
@@ -27,9 +26,16 @@ $(document).ready(function() {
         $("#owl-2").owlCarousel(
             {
                 autoPlay: false, //Set AutoPlay to 3 seconds
-                singleItem:true
+                items : 3,
+                itemsDesktop : [1300,3],
+                itemsDesktopSmall : [1199,2],
+                itemsMobile : [700,1],
+                navigation : true,
+                navigationText : false,
+                pagination: false
             });
 }
+
 /*$(".link").click(function(e)
 {
 
@@ -74,7 +80,7 @@ $(document).ready(function() {
 
             if (bodyelem.scrollTop() > 218)
             {
-                $('.sidebar').css('top',30);
+                $('.sidebar').css('top',60);
 
 
 
