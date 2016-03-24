@@ -175,8 +175,8 @@ function html5blank_conditional_scripts()
 // Load  styles, scripts
 function scripts_styles()
 {
-    wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
-    wp_enqueue_style('normalize'); // Enqueue it!
+    wp_register_style('font', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700', array(), '1.0', 'all');
+    wp_enqueue_style('font'); // Enqueue it!
 
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
