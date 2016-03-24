@@ -6,9 +6,7 @@
  */
  
 // Exit if accessed directly
-if ( !defined( 'ABSPATH' ) ) {
-	exit;
-} 
+if ( !defined( 'ABSPATH' ) ) exit;
 
 if( !class_exists( 'Sfmsb_Widget' )){
  
@@ -153,7 +151,7 @@ class Sfmsb_Widget extends WP_Widget {
 				
 				<script type='text/javascript'>
 		            jQuery(document).ready(function($) {
-		                jQuery('.sfmsb-color-picker').wpColorPicker();
+		                $('.sfmsb-color-picker').wpColorPicker();
 		            });
        			 </script>
        			 
@@ -198,7 +196,7 @@ class Sfmsb_Widget extends WP_Widget {
 				</p>
 				
 			
-			<?php
+			<?
 		
 		}
 
@@ -363,3 +361,4 @@ class Sfmsb_Widget extends WP_Widget {
 	
 }// class
 }// if
+	
